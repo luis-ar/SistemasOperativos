@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algoritmo FCFS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="encabezado"><u>Algoritmo FCFS</u></h1>
+    <p class="informacion">
+      Ingresa los datos de los procesos y presiona el botón "Agregar proceso".
+      Cuando hayas agregado todos los procesos, presiona el botón "Calcular
+      tiempos".
+    </p>
+    <div class="contenedor-tabla">
+      <table border="2" id="tabla-procesos" class="tabla">
+        <thead>
+          <tr>
+            <th>Proceso</th>
+            <th>Tiempo de llegada</th>
+            <th>Tiempo de ejecución</th>
+            <th>Tiempo de finalización</th>
+            <th>Tiempo de espera</th>
+            <th>Tiempo de retorno</th>
+          </tr>
+        </thead>
+        <tbody class="llenar-datos"></tbody>
+      </table>
+    </div>
+    <div class="contenedor-botones">
+      <button id="btn-agregar-proceso" class="botones btn1">
+        Agregar proceso
+      </button>
+      <button id="btn-calcular-tiempos" class="botones btn2">
+        Calcular tiempos
+      </button>
+    </div>
+
+    <script src="fcfs.js"></script>
+  </body>
+</html>
